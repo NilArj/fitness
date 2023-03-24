@@ -2,22 +2,20 @@ const { url } = require('inspector');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       colors: {
-        "gray-20": "#F8F4EB",
-        "gray-50": "#EFE6E6",
+        "gray-20": "#191A19",
+        "gray-50": "#F8F4EB",
         "gray-100": "#DFCCCC",
         "gray-500": "#5E0000",
-        "primary-100": "#FFE1E0",
-        "primary-300": "#FFA6A3",
-        "primary-500": "#FF6B66",
-        "secondary-400": "#FFCD5B",
-        "secondary-500": "#FFC132",
+        "primary-100": "#EDF1D6",
+        "primary-300": "#9DC08B",
+        "primary-500": "#40513B",
+        "secondary-400": "#609966",
+        "secondary-500": "#73b079",
       },
       backgroundImage: (theme) => ({
         "gradient-yellowred":

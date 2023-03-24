@@ -1,9 +1,11 @@
+import Navbar from "./components/navbar"
+
 function App() {
   
 
   return (
-    <div className="App">
-      Hello Vite
+    <div className="App bg-gray-20">
+     <Navbar/>
     </div>
   )
 }
