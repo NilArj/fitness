@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import Navbar from "./components/navbar"
+import Home from "./pages/home"
 import { SelectedPage } from "./shared/types"
 
 
@@ -19,15 +20,20 @@ function App() {
     }
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
-  })
+  }, [])
   
 
   return (
     <div className="App bg-gray-20">
-     <Navbar
+      
+      <Navbar
+     isTopOfPage= {isTopOfPage}
      selectedPage={selectedPage} setSelectedPage={setSelectedPage}
       />
-    </div>
+      <Home selectedPage={selectedPage}/>
+      </div>
+    
+    
   )
 }
 
