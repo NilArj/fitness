@@ -19,7 +19,7 @@ const Navbar = ({isTopOfPage ,selectedPage, setSelectedPage }: Props) => {
     const navbarBackground = isTopOfPage ? "": "bg-primary-100 drop-shadow"
 
     return (
-        <nav className={`${navbarBackground} w-full p-4 sm:text-lg sticky top-0 z-50`}>
+        <nav className={`${navbarBackground} bg-gray-20 w-full p-2 sm:text-lg sticky top-0 z-50`}>
             <div className='items-center justify-between flex md:w-3/4 mx-auto'>
 
                 {/* Left side */}
@@ -57,7 +57,7 @@ const Navbar = ({isTopOfPage ,selectedPage, setSelectedPage }: Props) => {
              {/* mobile design */}
 
                 {showMenu ? (
-                    <div className='fixed top-0 right-0 min-h-screen p-4 w-[60%] bg-primary-100 z-100 text-2xl'>
+                    <div className='fixed top-0 right-0 min-h-screen p-4 w-[60%] bg-primary-100 z-100 text-xl'>
 
                         <div className="fixed top-5 right-4 p-2 rounded-full border bg-primary-500">
                         <button

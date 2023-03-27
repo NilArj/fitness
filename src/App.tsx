@@ -24,7 +24,7 @@ function App() {
   
 
   return (
-    <div className="App bg-gray-20">
+    <div className="App ">
       
       <Navbar
      isTopOfPage= {isTopOfPage}

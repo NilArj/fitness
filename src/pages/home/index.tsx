@@ -12,45 +12,46 @@ const Home = ({ setSelectedPage }: Props) => {
   return (
     <section
       id='home'
-      className='bg-primary-200 py-10 px-3 flex flex-col justify-center items-center gap-10 '>
+      className='bg-gray-20 py-10 px-3 flex flex-col justify-center items-center gap-10 sm:flex-row  sm:gap-0 sm:max-w-3/4'>
 
-      {/* Image & Main header */}
-      <div className='max-w-md flex flex-col items-center '>
+      {/* Main header */}
+      <div className='flex flex-col sm:flex-row  sm:items-center sm:justify-center  '>
 
-        {/* Main header */}
-        <div className=' '>
+        <div className='flex flex-col gap-7 items-center'>
 
-          <div className='flex flex-col text-primary-100 gap-2'>
-            <h1 className='text-5xl font-bold' >Olympus Gym</h1>
-            <h5 className='text-xl '>military fitness center</h5>
+          <div className='flex flex-col text-center text-primary-100 gap-2'>
+            <h1 className='text-4xl font-bold tracking-wider sm:text-5xl sm:tracking-normal ' >Olympus Gym</h1>
+            <h5 className='text-2xl tracking-wider sm:text-3xl sm:tracking-wide '>military fitness center</h5>
           </div>
 
-          {/* Headings*/}
-          <div className='text-primary-100'>
-            <p>reach your full physical potential with military workouts for all fitness levels</p>
+
+          <div className='flex flex-col gap-7 text-justify max-w-[17rem] sm:max-w-[21rem]'>
+            <div className='text-primary-100 text-base tracking-wider'>
+              <p>reach your full physical potential with military workouts and classes for all fitness levels</p>
+            </div>
+
+            {/* Actions*/}
+            <div className='flex items-center gap-7'>
+              <ActionButton setSelectedPage={setSelectedPage}>
+                Join Now
+              </ActionButton>
+              <AnchorLink
+                className='text-sm font-bold text-primary-500 underline hover:text-secondary-500'
+                onClick={() => setSelectedPage(SelectedPage.ContactUs)}
+                href={`#${SelectedPage.ContactUs}`}>
+                <p>Learn More</p>
+              </AnchorLink>
+            </div>
           </div>
-        </div>
 
-        {/* Actions*/}
-        <div className='flex items-center gap-3'>
-          <ActionButton setSelectedPage={setSelectedPage}>
-            Join Now
-          </ActionButton>
-          <AnchorLink
-            className='text-sm font-bold text-primary-500 underline hover:text-secondary-500'
-            onClick={() => setSelectedPage(SelectedPage.ContactUs)}
-            href={`#${SelectedPage.ContactUs}`}>
-            <p>Learn More</p>
-          </AnchorLink>
-        </div>
-
-        {/* Image*/}
-        <div className=''>
-          <img className='w-full h-auto' alt='home-page-image' src={HomePageImage} />
         </div>
 
 
+      </div>
 
+      {/* Main Image */}
+      <div className=''>
+        <img className='w-full h-full object-cover' alt='home-page-image' src={HomePageImage} />
       </div>
 
 
@@ -60,3 +61,6 @@ const Home = ({ setSelectedPage }: Props) => {
 }
 
 export default Home
+
+
+
