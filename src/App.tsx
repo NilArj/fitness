@@ -22,20 +22,21 @@ function App() {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
-  
+
 
   return (
     <div className="App ">
-      
+
       <Navbar
-     isTopOfPage= {isTopOfPage}
-     selectedPage={selectedPage} setSelectedPage={setSelectedPage}
+        isTopOfPage={isTopOfPage}
+        selectedPage={selectedPage}
+        setSelectedPage={setSelectedPage}
       />
-      <Home  selectedPage={selectedPage}/>
-      <Benefits/>
-      </div>
-    
-    
+      <Home  setSelectedPage={setSelectedPage}/>
+      <Benefits />
+    </div>
+
+
   )
 }
 

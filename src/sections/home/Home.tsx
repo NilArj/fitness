@@ -14,14 +14,14 @@ const Home = ({ setSelectedPage }: Props) => {
         <motion.section
             id='home'
             onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
-            className='bg-gray-20 mt-14 py-12 px-3 flex flex-col justify-center items-center gap-10 sm:mt-15 sm:flex-row  sm:gap-0 sm:max-w-3/4'>
+            className='bg-gray-20 pt-20 pb-12 px-3 flex flex-col justify-center items-center gap-10 sm:mt-15 sm:flex-row  sm:gap-0 sm:max-w-3/4'>
 
             {/* Main header */}
             <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.8 }}
-            transition={{ delay: 0.3,  duration: 0.9 }}
+            transition={{ duration: 0.9 }}
             variants={{
                 hidden: { opacity: 0, x: -100 },
                 visible: { opacity: 1, x: 0 }
@@ -42,7 +42,16 @@ const Home = ({ setSelectedPage }: Props) => {
                         </div>
 
                         {/* Actions*/}
-                        <div className='flex items-center justify-center gap-7'>
+                        <motion.div
+                         initial="hidden"
+                         whileInView="visible"
+                         viewport={{ once: true, amount: 0.8 }}
+                         transition={{ delay: 0.3,  duration: 0.9 }}
+                         variants={{
+                             hidden: { opacity: 0, x: -100 },
+                             visible: { opacity: 1, x: 0 }
+                         }}
+                        className='flex items-center justify-center gap-7'>
                             <ActionButton setSelectedPage={setSelectedPage}>
                                 Join Now
                             </ActionButton>
@@ -52,7 +61,7 @@ const Home = ({ setSelectedPage }: Props) => {
                                 href={`#${SelectedPage.ContactUs}`}>
                                 <p>Learn More</p>
                             </AnchorLink>
-                        </div>
+                        </motion.div>
                     </div>
 
                 </div>
@@ -62,8 +71,6 @@ const Home = ({ setSelectedPage }: Props) => {
             <div className=''>
                 <img className='w-full h-full object-cover' alt='home-page-image' src={HomePageImage} />
             </div>
-
-
 
         </motion.section>
     )
