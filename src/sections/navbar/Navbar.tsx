@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Bars4Icon, XMarkIcon } from "@heroicons/react/24/solid"
 import { SelectedPage } from '../../shared/types'
 import Logo from "../../assets/images/logo-3.png"
-import Link from './Link'
+import Link from "../../components/Link"
 import ActionButton from "../../shared/ActionButton"
 
 
@@ -19,7 +19,7 @@ const Navbar = ({isTopOfPage ,selectedPage, setSelectedPage }: Props) => {
     const navbarBackground = isTopOfPage ? "": "bg-primary-100 drop-shadow"
 
     return (
-        <nav className={`${navbarBackground} bg-gray-20 w-full p-2 sm:text-lg sticky top-0 z-50`}>
+        <nav className={`${navbarBackground} bg-gray-20 w-full p-2 sm:text-lg fixed top-0 z-50`}>
             <div className='items-center justify-between flex md:w-3/4 mx-auto'>
 
                 {/* Left side */}

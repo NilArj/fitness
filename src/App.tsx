@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
-import Navbar from "./components/navbar"
-import Home from "./pages/home"
-import { SelectedPage } from "./shared/types"
+import { SelectedPage } from './shared/types'
+import Navbar from "./sections/navbar/Navbar"
+import Home from "./sections/home/Home"
+import Benefits from "./sections/benefits/Benefits"
 
 
 
@@ -30,7 +31,8 @@ function App() {
      isTopOfPage= {isTopOfPage}
      selectedPage={selectedPage} setSelectedPage={setSelectedPage}
       />
-      <Home selectedPage={selectedPage}/>
+      <Home  selectedPage={selectedPage}/>
+      <Benefits/>
       </div>
     
     
