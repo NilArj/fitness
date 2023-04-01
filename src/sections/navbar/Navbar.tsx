@@ -19,7 +19,7 @@ const Navbar = ({isTopOfPage ,selectedPage, setSelectedPage }: Props) => {
     const navbarBackground = isTopOfPage ? "": "bg-primary-100 drop-shadow"
 
     return (
-        <nav className={`${navbarBackground} bg-gray-20 w-full p-2 sm:text-lg fixed top-0 z-50`}>
+        <nav className={`${navbarBackground} bg-gray-20 w-full p-2 sm:text-lg fixed top-0 z-30`}>
             <div className='items-center justify-between flex md:w-3/4 mx-auto'>
 
                 {/* Left side */}

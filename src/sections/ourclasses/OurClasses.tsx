@@ -52,11 +52,11 @@ const OurClasses = ({ setSelectedPage }: Props) => {
             <motion.div
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.8 }}
-                transition={{ duration: 0.9 }}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.5 }}
                 variants={{
                     hidden: { opacity: 0, x: -100 },
-                    visible: { opacity: 1, x: 0 }
+                    visible: { opacity: 1, x: 0 },
                 }}
                 className='mx-auto w-5/6 sm:my-5 sm:w-3/5'>
 
