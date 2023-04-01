@@ -13,7 +13,7 @@ const Home = ({ setSelectedPage }: Props) => {
     return (
         <section
             id='home'
-            className='bg-gray-20 w-full mt-14 py-10 flex items-center h-full'>
+            className='bg-gray-20 w-full mt-14 py-20 flex items-center h-full'>
            
             <motion.div
                 onViewportEnter={() => setSelectedPage(SelectedPage.Home)}

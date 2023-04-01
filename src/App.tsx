@@ -4,6 +4,7 @@ import Navbar from "./sections/navbar/Navbar"
 import Home from "./sections/home/Home"
 import Benefits from "./sections/benefits/Benefits"
 import OurClasses from "./sections/ourclasses/OurClasses"
+import ContactUs from "./sections/contactus/ContactUs"
 
 
 
@@ -36,6 +37,7 @@ function App() {
       <Home  setSelectedPage={setSelectedPage}/>
       <Benefits setSelectedPage={setSelectedPage}/>
       <OurClasses setSelectedPage={setSelectedPage}/>
+      <ContactUs setSelectedPage={setSelectedPage}/>
     </div>
 
 
