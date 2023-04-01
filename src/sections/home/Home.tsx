@@ -17,7 +17,7 @@ const Home = ({ setSelectedPage }: Props) => {
            
             <motion.div
                 onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
-                className='mx-auto w-5/6 gap-8 flex flex-col items-center justify-center sm:flex-row sm:h-5/6'>
+                className='mx-auto w-5/6 gap-8 flex flex-col items-center justify-center sm:flex-row '>
 
 
                 {/* Main header */}

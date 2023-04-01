@@ -3,6 +3,7 @@ import { SelectedPage } from './shared/types'
 import Navbar from "./sections/navbar/Navbar"
 import Home from "./sections/home/Home"
 import Benefits from "./sections/benefits/Benefits"
+import OurClasses from "./sections/ourclasses/OurClasses"
 
 
 
@@ -33,7 +34,8 @@ function App() {
         setSelectedPage={setSelectedPage}
       />
       <Home  setSelectedPage={setSelectedPage}/>
-      <Benefits />
+      <Benefits setSelectedPage={setSelectedPage}/>
+      <OurClasses setSelectedPage={setSelectedPage}/>
     </div>
 
 
