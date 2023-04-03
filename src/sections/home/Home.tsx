@@ -4,6 +4,7 @@ import {motion} from "framer-motion"
 import ActionButton from '../../shared/ActionButton'
 import HomePageImage from "../../assets/images/homepage.png"
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import ContactUs from '../contactus/ContactUs'
 
 type Props = {
     setSelectedPage: (value: SelectedPage) => void
@@ -13,7 +14,7 @@ const Home = ({ setSelectedPage }: Props) => {
     return (
         <section
             id='home'
-            className='bg-gray-20 w-full mt-14 py-20 flex items-center h-full'>
+            className='bg-gray-20 w-full mt-14 px-4 py-20 flex items-center h-full'>
            
             <motion.div
                 onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
@@ -30,7 +31,7 @@ const Home = ({ setSelectedPage }: Props) => {
                         hidden: { opacity: 0, x: -100 },
                         visible: { opacity: 1, x: 0 },
                     }}
-                    className='flex flex-col sm:flex-row sm:items-center sm:justify-center  '>
+                    className='basis-1/2 flex flex-col sm:flex-row sm:items-center sm:justify-center  '>
 
                     <div className='flex flex-col gap-7 items-center'>
 
@@ -38,7 +39,6 @@ const Home = ({ setSelectedPage }: Props) => {
                             <h1 className='text-4xl font-bold tracking-wider text-justify  sm:text-5xl sm:tracking-normal ' >Olympus Gym</h1>
                             <h5 className='text-2xl tracking-wider text-justify sm:text-3xl sm:tracking-wide '>military fitness center</h5>
                         </div>
-
 
                         <div className='flex flex-col gap-7 text-justify max-w-[17rem] sm:max-w-[21rem]'>
                             <div className='text-primary-100 text-base text-justify tracking-wider'>
@@ -60,9 +60,9 @@ const Home = ({ setSelectedPage }: Props) => {
                                     Join Now
                                 </ActionButton>
                                 <AnchorLink
-                                    className='text-sm font-bold text-primary-500 underline hover:text-secondary-500'
-                                    onClick={() => setSelectedPage(SelectedPage.ContactUs)}
-                                    href={`#${SelectedPage.ContactUs}`}>
+                                    className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
+                                    href={`#${SelectedPage.ContactUs}`}
+                                    onClick={() => setSelectedPage(SelectedPage.ContactUs)}>
                                     <p>Learn More</p>
                                 </AnchorLink>
                             </motion.div>
@@ -72,8 +72,8 @@ const Home = ({ setSelectedPage }: Props) => {
                 </motion.div>
 
                 {/* Main Image */}
-                <div className=''>
-                    <img className='w-full h-full object-cover' alt='home-page-image' src={HomePageImage} />
+                <div className='basis-1/2'>
+                    <img className=' object-cover' alt='home-page-image' src={HomePageImage} />
                 </div>
             </motion.div>
         </section>

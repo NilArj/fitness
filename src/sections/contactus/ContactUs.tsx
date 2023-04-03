@@ -21,7 +21,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
   };
 
   return (<section
-    id='benefits'
+    id='contactus'
     className='bg-primary-100 py-20 px-4'>
 
     <motion.div
@@ -59,7 +59,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
         <form
           target="_blank"
           onSubmit={onSubmit}
-          action="https://formsubmit.co/nnilviaa@gmail.com"
+          action="https://formsubmit.co/example@gmail.comm"
           method="POST"
           className='flex flex-col gap-2 sm:justify-center'
         >
