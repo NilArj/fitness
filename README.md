@@ -40,8 +40,7 @@ To run the app locally, follow these steps:
  <img  style="margin-right: 10px;" src="https://github.com/NilArj/fitness/blob/42e4fb47a4fb78f2820cb1c70b3d744cc0198aa1/src/assets/images/screenshot_1.png" alt="Home page Screenshot" width="200" height="400">
 <img  style="margin-right: 10px;" src="https://github.com/NilArj/fitness/blob/42e4fb47a4fb78f2820cb1c70b3d744cc0198aa1/src/assets/images/screenshot_2.png" alt="home page menu Screenshot" width="200" height="400">
 <img  style="margin-right: 10px;" src="https://github.com/NilArj/fitness/blob/42e4fb47a4fb78f2820cb1c70b3d744cc0198aa1/src/assets/images/screenshot_3.png" alt="class section Screenshot" width="200" height="400">
- <img  style="margin-right: 10px;" src="https://github.com/NilArj/fitness/blob/42e4fb47a4fb78f2820cb1c70b3d744cc0198aa1/src/assets/images/gif.gif" alt="landing page gif" width="600" height="400">
 </div>
 <div style="display: flex ">
-
+ <img  style="margin-right: 10px;" src="https://github.com/NilArj/fitness/blob/42e4fb47a4fb78f2820cb1c70b3d744cc0198aa1/src/assets/images/gif.gif" alt="landing page gif" width="600" height="350">
 </div>
